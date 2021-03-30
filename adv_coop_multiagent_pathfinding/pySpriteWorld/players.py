@@ -40,7 +40,6 @@ class Player(MovingSprite):
             pygame.K_t:     partial(self.throw_ray,radian_angle=None,mask=mask,layers=gDict)
         }
 
-
     def cherche_ramassable(self,layers,filtre = lambda x:True,verb=False):
         for obj in layers["ramassable"]:
             if filtre(obj):
@@ -58,7 +57,6 @@ class Player(MovingSprite):
         self.inventory.add( o )
         o.remove( layers.values() )
         return o
-
 
     def depose(self,layers,filtre = lambda x:True,verb=False):
         # remove object from existing groups displayed on the screen

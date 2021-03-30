@@ -4,7 +4,7 @@ import pySpriteWorld.glo as glo
 import pygame
 from collections import OrderedDict
 import random
-from pySpriteWorld.sprite import MySprite,MovingSprite
+from pySpriteWorld.sprite import MySprite, MovingSprite
 from functools import wraps
 import copy
 import os, sys
